@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Meal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+<body class="body">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid w-75 ">
+              <a class="navbar- mt-3" href="#"><img src="images/design8.png" width="150px" height="80px"> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar- d-flex justify-content-around align-items-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link text-dark fw-bold fs-5 px-3"href="#">Home</a>
+                  <a class="nav-link text-dark fw-bold fs-5 px-3" href="#">About</a>
+                  <a class="nav-link text-dark fw-bold fs-5 px-3" href="#">Recipies</a>
+                  <a class="nav-link text-dark fw-bold fs-5 px-3" href="#">Blog</a>
+                  <a class="nav-link text-dark fw-bold fs-5 px-2" href="#"><i class="bi bi-cart-plus-fill fs-5 mt-1 pt-1 ps-4">
+                    <span>0</span></i></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="text-center mt-5">Search Your Meals</h1>
+            <div class="input-group mb-3 w-25 mx-auto mt-4 mb-5">
+                <input id="input-field" type="text" class="form-control" placeholder="Enter your meal name..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="getLoadApi()" class="btn btn-secondary border-0" type="button" id="button-addon2">Search</button>
+              </div>
+        </section>
+        <section>
+            <div id="error-containar">
+              
+            </div>
+        </section>
+        <section>
+            <div id="meals-details">
+              
+            </div>
+        </section>
+        <section id="">
+            <div class="row row-cols-1 row-cols-md-2 g-4 w-75 mx-auto mt-5" id='meals-containar' >
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- Bootstrap Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
